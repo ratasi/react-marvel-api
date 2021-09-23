@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Grid, Header } from "semantic-ui-react";
 import Container from "../components/Container";
-import ListComics from "../components/ListComics/ListComics";
+import ListComics from "../components/ListComics";
 import useFetch from "../hooks/useFetch";
 
 export default function Comics() {
@@ -19,7 +19,7 @@ export default function Comics() {
             <Header as="h2">Los mejores Cómics</Header>
             <ListComics
               listComics={listComics}
-              setRenderComics={setRenderComics}
+              ListComics={setRenderComics}
               renderComics={renderComics}
             />
           </Container>

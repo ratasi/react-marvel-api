@@ -26,11 +26,6 @@ export default function Header() {
           onClick={handleItemClick}
         />
         <Menu.Item
-          name="peliculas"
-          active={activeItem === "peliculas"}
-          onClick={handleItemClick}
-        />
-        <Menu.Item
           name="comics"
           active={activeItem === "comics"}
           onClick={handleItemClick}
@@ -39,11 +34,6 @@ export default function Header() {
           <Menu.Item>
             <Input icon="search" placeholder="Buscar película o serie..." />
           </Menu.Item>
-          <Menu.Item
-            name="logout"
-            active={activeItem === "logout"}
-            onClick={handleItemClick}
-          />
         </Menu.Menu>
       </Menu>
     </div>

@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Series from "./pages/Series";
 import Comics from "./pages/Comics";
-import Peliculas from "./pages/Peliculas";
 import Error404 from "./pages/Error404";
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
           <Route path="/inicio" exact component={() => <Home />} />
           <Route path="/series" exact component={() => <Series />} />
           <Route path="/comics" exact component={() => <Comics />} />
-          <Route path="/peliculas" exact component={() => <Peliculas />} />
           <Route component={() => <Error404 />} />
         </Switch>
       </Router>
