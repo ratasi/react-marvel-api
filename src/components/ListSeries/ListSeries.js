@@ -12,12 +12,14 @@ export default function ListSeries({ listSeries }) {
     );
   const { results } = result.data;
 
+  console.log(results);
+
   return (
     <Card.Group itemsPerRow={5}>
       {results.map((res, index) => (
         <Card key={index} className="list-series">
           <Image
-            src={`${res.images[0].path}.${res.images[0].extension}`}
+            src={`${res.thumbnail.path}.${res.thumbnail.extension}`}
             wrapped
             ui={false}
           />
@@ -25,17 +27,12 @@ export default function ListSeries({ listSeries }) {
             <Card.Header>{res.title}</Card.Header>
             <Card.Meta>
               <span>
-                <Icon name="users" /> {res.characters.available}
+                <Icon name="users" /> {res.creators.available}
               </span>
             </Card.Meta>
             <Card.Meta>
               <span>
-                <Icon name="dollar" /> {res.prices[0].price}
-              </span>
-            </Card.Meta>
-            <Card.Meta>
-              <span>
-                <Icon name="rebel" /> {res.upc}
+                <Icon name="rebel" /> {res.id}
               </span>
             </Card.Meta>
             <Card.Description>{res.description}</Card.Description>
