@@ -15,13 +15,16 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-## Learn More
+## Requirements
 
 You should have an API Key of Marvel. You can create in their website. https://developer.marvel.com/
 
 
 You will need the ENV:
+
 REACT_APP_URL_BASE=https://gateway.marvel.com:443/v1/public
+
 REACT_APP_API_KEY_MARVEL=your_api_key_marvel
+
 REACT_APP_HASH_ID=your_hash_id_marvel
 
