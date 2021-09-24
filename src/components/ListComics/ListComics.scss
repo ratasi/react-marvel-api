@@ -9,6 +9,10 @@
     text-overflow: ellipsis;
     max-width: 200px;
   }
+  .image {
+    height: 300px;
+    display: flex !important;
+  }
 }
 .container-button {
   text-align: center;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, Input } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 import { useHistory } from "react-router";
 import "./Header.scss";
 
@@ -30,11 +30,6 @@ export default function Header() {
           active={activeItem === "comics"}
           onClick={handleItemClick}
         />
-        <Menu.Menu position="right">
-          <Menu.Item>
-            <Input icon="search" placeholder="Buscar película o serie..." />
-          </Menu.Item>
-        </Menu.Menu>
       </Menu>
     </div>
   );
