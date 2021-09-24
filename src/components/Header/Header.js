@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Menu } from "semantic-ui-react";
-import { useHistory } from "react-router";
+import { useHistory, useLocation } from "react-router";
 import "./Header.scss";
 
 export default function Header() {
-  const [activeItem, setActiveItem] = useState("inicio");
+  const currentPath = useLocation();
+  const finalCurrentPath = currentPath.pathname.replace("/", "");
+  const [activeItem, setActiveItem] = useState(finalCurrentPath);
   let history = useHistory();
 
   const handleItemClick = (e, { name }) => {
