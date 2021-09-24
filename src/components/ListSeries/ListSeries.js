@@ -12,8 +12,6 @@ export default function ListSeries({ listSeries }) {
     );
   const { results } = result.data;
 
-  console.log(results);
-
   return (
     <Card.Group itemsPerRow={5}>
       {results.map((res, index) => (
