@@ -19,7 +19,7 @@ export default function Comics() {
             <Header as="h2">Los mejores Cómics</Header>
             <ListComics
               listComics={listComics}
-              ListComics={setRenderComics}
+              setRenderComics={setRenderComics}
               renderComics={renderComics}
             />
           </Container>
